@@ -5,6 +5,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Unknown regions</title>
         <link rel="stylesheet" href="style.css">
-        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
     </head>
+    <body>
+        <header>
+            <div class="status">● Online </div>
+        </header>
+        <main>
+            <section class="hero">
+                <p class="eyebrow-raise">Library of unusual and unknown locations</p>
+                <h1>Not only is the Universe stranger than we think,<br> it is stranger than we can think.<br>~Werner Heisenberg</h1>
+                <p class="intro">
+                    Somewhere, around the world, there are places
+                    that exist but are unexplained. Let's find them.
+                </p>
+                <button id="discoveringbtn">
+                    <span>→</span>Discover a place!
+                </button>
+                <p class="justAhint">
+                    Just a click and you learn about a new place.
+                </p>
+            </section>
+            <section class="result" id="result" aria-live="polite">
+                <div class="result-top">
+                    <span id="entrynumber">Entry 001</span>
+                    <span class="found">Location found</span>
+                </div>
+                <div class="classification">
+                    <span id="category" class="category">
+                        Unclassifed
+                    </span>
+                    <div class="rating box">
+                        <span class="rating-label">
+                            Index
+                        </span>
+                        <span id="rating" class="rating">
+                            ★★★★★
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
