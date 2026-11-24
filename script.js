@@ -53,5 +53,85 @@ const locations = [
         longitude: -99.0960,
         storyTime: "According to the local gossip mill, this CHEERY kindergarden is the courtesy of a caretaker who hung hundreds of old dolls across this island on the whim of an apparition of a young girl."
     },
+    {
+        name: "Racetrack Playa",
+        country: "Death Valley, California, USA",
+        category: "Natural Mysteries",
+        rating: 4,
+        latitude: 36.6814,
+        longitude: -117.5625,
+        storyTime: "Mysterious, unsanctioned movement of rocks was recorded across this dry lakebed, leaving long finger-like trails behind them without obvious human intervention."
+    },
+    {
+        name: "Hashima Island",
+        country: "Nagasaki, Japn",
+        category: "Abandoned locations",
+        rating: 4,
+        latitude: 32.6278,
+        longitude: 129.7381,
+        storyTime: "Caved in during 1974, this tiny isalnd was abandoned by it's coal-mining settlement. Currently, it's crumbling concrete structures now gape at passer-bys as a reminder of an industrial past."
+    },
+    {
+        name: "Houska Castle",
+        country: "Liberic Region, Czech Republic",
+        category: "Urban Folklore",
+        rating: 4,
+        latitude: 50.4886,
+        longitude: 14.6247,
+        storyTime: "A medieval castle (not Count Dracula's) draped with legends that claims to have been built to hide a pit of something sinister beneath it. It's creepy look as well as embellishments have helped in garnering quite a reputation."
+    },
+    {
+        name: "The Mary Celeste",
+        country: "Atlantic Ocean, Near the Azores",
+        category: "Unanswered Oddities",
+        rating: 5,
+        latitude: 38.0000,
+        longitude: -17.0000,
+        storyTime: "Discovered in 1872, this lone ship was spotted steering erratically at sea with its crew MIA and no explanation for why or how. Theories today suggest murder by the crew of the captain and his family while others bring in curses, bad omens and ghostly apparitions. Which is true? Nobody knows, and the fate of its crew remains unsolved."
+    },
+    {
+        name: "SS Ourang Medan",
+        country: "Strait Of Malacca, Southeast Asia",
+        category: "Unanswered Oddities",
+        rating: 5,
+        latitude: 2.5000,
+        longitude: 101.0000,
+        storyTime: "According to chilling maritime lore, the ship dent out a Morse code distress signal reporting its crew dead as well as ending the with an 'I die' from the captain before the vessel was discovered by a rescue team, reporting all crew members to be frozen in death with wide eyes as though frightened and without visible injuries."
+    }
 
-]
+];
+const discoveringbtn = document.getElementById("discoveringbtn");
+const result = document.getElementById("result");
+let previousIndex = -1;
+let discoveries = 0;
+discoveringbtn.addEventListener("click", function() {
+    let randomIndex;
+    do {
+        randomIndex = Math.floor(Math.random() * locations.length);
+    } while (randomIndex === previousIndex);
+    previousIndex = randomIndex;
+    const place = locations[randomIndex];
+    discoveries++;
+    document.getElementById("NameOfLocation").textContent =
+    place.name;
+    document.getElementById("country").textContent =
+    place.country;
+    document.getElementById("VillainBackstory").textContent =
+    place.storyTime;
+    document.getElementById("coOrdinates").textContent =
+    `${place.latitude}°, ${place.longitude}°`;
+    document.getElementById("category").textContent =
+    place.category;
+    document.getElementById("rating").textContent =
+    "★".repeat(place.rating) +
+    "☆".repeat(5 - place.rating);
+    document.getElementById("entrynumber").textContent =
+     `Entry Number ${String(discoveries).padStart(3, "0")}`;
+    document.getElementById("maplink").href =
+    `https://www.google.com/maps?q=${place.latitude},${place.longitude}`;
+    result.style.display = "block";
+    result.scrollIntoView({
+        behaviour: "smooth",
+        block: "center"
+    });
+});
