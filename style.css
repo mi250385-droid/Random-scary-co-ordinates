@@ -10,13 +10,6 @@ body {
     min-height: 100vh;
     padding: 35px 8%;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 25px;
-    align-items: center;
-    border-bottom: 1px solid #394139;
-}
 .status {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
