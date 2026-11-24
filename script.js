@@ -25,7 +25,7 @@ const locations = [
         latitude: 40.2525,
         longitude: 58.4396,
         story: "Occupation? Burning ditch of fire. Nickname? the Door to Hell. Production by? underground gas-field collapse but not totally sure like an I-object-your-honour. Attraction? flames. Atleast to people."
-    }
+    },
     {
         name: "Nazca Lines",
         country: "Nazca Desert, Peru",
@@ -43,7 +43,7 @@ const locations = [
         latitude: 27.0957,
         longitude: 76.2875,
         storyTime: "A historic fort full of stories rivaling shakespeare's writng like a...well, a rival; curses, forbidden love, a magician who supposedly doomed the entire settlement. What more could you possibly want?"
-    }
+    },
     {
         name: "The Island of Dolls", //why oh why does that sound creepier than the rest?
         country: "Xochimilco, Mexico",
@@ -53,5 +53,5 @@ const locations = [
         longitude: -99.0960,
         storyTime: "According to the local gossip mill, this CHEERY kindergarden is the courtesy of a caretaker who hung hundreds of old dolls across this island on the whim of an apparition of a young girl."
     },
-    
+
 ]
