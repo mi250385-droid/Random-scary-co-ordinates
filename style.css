@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #171B18;
+    color: #D5C7A8;
+    font-family: 'Playfair Display', serif;
+    min-height: 100vh;
+    padding: 35px 8%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    align-items: center;
+    border-bottom: 1px solid #394139;
+}
+.status {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #8B9B78;
+}
+main {
+    max-width: 720px;
+    margin: 75px auto 50px;
+}
+.hero {
+    margin-bottom: 65px;
+    text-align: center;
+}
+.eyebrow-raise,
+.justAhint,
+.country,
+.result-top,
+.coOrdinates span,
+footer {
+    letter-spacing: 1.5px;
+    font-family: 'DM Mono', monospace;
+}
+.eyebrow-raise {
+    margin-bottom: 25px;
+    font-size: 10px;
+    color: #A17B5B;
+}
+h1 {
+    line-height: 1.15;
+    font-size: clamp(38px, 7vw, 65px);
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+.intro {
+    max-width: 400px;
+    color: #92968A;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 15px;
+}
+button {
+    padding: 17px 30px;
+    margin-top: 35px;
+    color: #F1E9D8;
+    background: #68745B;
+    font-family: 'DM Mono', monospace;
+    border: 1px solid #849071;
+    letter-spacing: 1px;
+    font-size: 11px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+button span {
+    margin-right: 10px;
+}
+.justAhint {
+    margin-top: 18px;
+    color: #92968A;
+    font-size: 9px;
+}
+.result {
+    border: 1px solid #394139;
+    background: #222923;
+    display: none;
+    padding: 30px;
+    animation: appear 0.5s ease;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.result-top {
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid #394139;
+    padding-bottom: 22px;
+    color: #92968A;
+    font-size: 10px;
+}
+.found {
+    color: #8B9B78;
+}
+.classification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #394139;
+    padding: 22px 0;
+}
+.category {
+    padding: 8px 12px;
+    display: inline-block;
+    color: #C5A47C;
+    border: 1px solid #8B765B;
+    font-size: 9px;
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.rating-box {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    gap: 7px;
+}
+.rating-label {
+    color: #92968A;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 1px;
+    font-size: 9px;
+}
+.rating {
+    letter-spacing: 3px;
+    color: #C5A47C;
+    font-size: 15px;
+}
+.location-facts {
+    padding: 28px 0 20px;
+}
+.country {
+    font-size: 10px;
+    color: #A17B5B;
+    margin-bottom: 12px;
+}
+h2 {
+    font-weight: 400;
+    font-size: 34px;
+}
+.storyTime {
+    color: #B4B5A8;
+    line-height: 1.9;
+    font-size: 15px;
+    max-width: 550px;
+}
+.coOrdinates {
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #394139;
+}
+.coOrdinates span {
+    color: #92968A;
+    font-size: 10px;
+}
+.coOrdinates p {
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: 'DM Mono', monospace;
+}
+.NoteForRating {
+    font-size: 10px;
+    line-height: 1.7;
+    color: #858A80;
+    font-style: italic;
+    margin-top: 18px;
+}
+#maplink {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 13px 20px;
+    border: 1px solid #68745B;
+    color: #D5C7A8;
+    text-decoration: none;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+#maplink:hover {
+    background: #68745B;
+}
+footer {
+    border-top: 1px solid #394139;
+    padding-top: 25px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #92968A;
+    font-size: 9px;
+}
+@media (max0width: 600px) {
+    body {
+        padding: 25px 6%;
+    }
+    main {
+        margin-top: 60px;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    .result {
+        padding: 20px;
+    }
+    .result-top {
+        font-size: 8px;
+    }
+    .classification {
+        align-items: flex-start;
+    }
+    footer {
+        font-size: 8px;
+    }
+}
