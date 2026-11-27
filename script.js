@@ -24,7 +24,7 @@ const locations = [
         rating: 4,
         latitude: 40.2525,
         longitude: 58.4396,
-        story: "Occupation? Burning ditch of fire. Nickname? the Door to Hell. Production by? underground gas-field collapse but not totally sure like an I-object-your-honour. Attraction? flames. Atleast to people."
+        storyTime: "Occupation? Burning ditch of fire. Nickname? the Door to Hell. Production by? underground gas-field collapse but not totally sure like an I-object-your-honour. Attraction? flames. Atleast to people."
     },
     {
         name: "Nazca Lines",
